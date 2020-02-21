@@ -13,8 +13,8 @@ Package.describe({
 Package.onUse(function (api) {
   api.versionsFrom('1.8.2');
   api.use('ecmascript');
-  api.use('accounts-base@latest', ['client', 'server']);
-  api.use('jquery@latest', 'client');
+  api.use('accounts-base', ['client', 'server']);
+  api.use('jquery', 'client');
   api.mainModule('stale-session-client.js', 'client');
   api.mainModule('stale-session-server.js', 'server');
 });
